@@ -480,6 +480,7 @@ footer {
 
   #prefooter .contact {
     width: 100%;
+    flex-direction: column;
   }
   #prefooter .contact input, #prefooter .contact button {
     width: 100%;

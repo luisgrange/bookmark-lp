@@ -504,6 +504,7 @@ footer{
     #prefooter{
         .contact{
             width: 100%;
+            flex-direction: column;
         }
 
         .contact input, .contact button{
