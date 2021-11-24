@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$Soft-Red: hsl(0, 94%, 66%);
+$Grayish-Blue: hsl(229, 8%, 60%);
+$Soft-Blue: hsl(231, 69%, 60%);
+$Very-Dark-Blue: hsl(229, 31%, 21%);
+
+@mixin button {
+    border: none;
+    border-radius: 3px;
+    background: $Soft-Red;
+    color: #fff;
+    font: normal normal 18px/20px Rubik;
+    padding: 10px;
+    width: 100%;
+    transition: all .4s ease;
+}
+
+/*GLOBAL*/
+#mobile{
+    display: none;
+}
+ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+header{
+    padding-top: 1rem;
+}
+header{
+    ul li{
+        width: 100%;
+    }
+    ul li a{
+        text-decoration: none;
+        font: normal normal 18px/20px Rubik;
+        color: $Very-Dark-Blue;
+        transition: all .3s ease;
+    }
+    ul li a:hover{
+        color: $Soft-Red;
+        opacity: .7;
+
+    }
+    ul li button{
+        @include button();
+    }
+}
+main{
+    margin-top: 3rem;
+}
+#main-top{
+    position: relative;
+}
+#main-top{
+    .container{
+        display: flex;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text h1{
+        font: normal normal 500 35px/30px Rubik;
+        color: $Very-Dark-Blue;
+    }
+    .text p{
+        font: normal normal 400 20px/30px Rubik;
+        color: $Grayish-Blue;
+    }
+
+
+
+    .btn.chrome{
+        @include button();
+        width: 30%;
+        background: $Soft-Blue;
+        font: normal normal 400 18px/30px Rubik;
+        box-shadow: rgba(0,0,0,.2) 1px 1px 3px 3px;
+        margin-right: 10px;
+    }
+
+    .btn.firefox{
+        font: normal normal 400 18px/30px Rubik;
+        box-shadow: rgba(0,0,0,.2) 1px 1px 2px 2px;
+        margin-left: 10px;
+
+    }
+
+    .image {
+        z-index: 10;
+    }
+}
+
+#main-top::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: $Soft-Blue;
+    height: 280px;
+    width: 500px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    z-index: 0;
+}
+
+#features{
+    ul.features{
+        justify-content: center;
+    }
+    li.feature{
+        padding: 3rem 3rem .5rem;
+        border-bottom: 1px solid $Grayish-Blue;
+        cursor: pointer;
+    }
+    .feature.active{
+        border-bottom: 2px solid $Soft-Red;
+    }
+
+    .content{
+        text-align: center;
+    }
+    .content h2, .actual-content li h3{
+        font: normal normal 500 30px/30px Rubik;
+        color: $Very-Dark-Blue;
+    }
+    .content p, .features li{
+        font: normal normal 400 18px/30px Rubik;
+        color: $Grayish-Blue;
+        white-space: pre-line;
+    }
+
+    
+
+    .tab{
+        display: none;
+    }
+
+    .tab.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actual-content{
+        margin-top: 3rem;
+        position: relative;
+        z-index: 10;
+
+    }
+
+    .actual-content li > .col-md-6{
+        display: flex;
+        justify-content: center;
+    }
+
+    .actual-content li img{
+        width: 60%;
+        z-index: 11;
+
+    }
+
+    .actual-content li .col-md-6:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .actual-content li p{
+        font: normal normal 400 16px/30px Rubik;
+        color: $Grayish-Blue;
+        width: 60%;
+    }
+
+    .actual-content li button{
+        @include button();
+        width: 30%;
+        background: $Soft-Blue;
+    } 
+}
+
+#extensions{
+    h2{
+        font: normal normal 500 30px/30px Rubik;
+        color: $Very-Dark-Blue;
+    }
+    p{
+        font: normal normal 400 18px/30px Rubik;
+        color: $Grayish-Blue;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgb(0 0 0 / 20%) 1px 2px 2px 2px;
+    }
+
+    .card-body button{
+        @include button();
+        background: $Soft-Blue;
+        font-size: 13px;
+    }
+
+    .card-body p{
+        font: normal normal 500 16px/25px Rubik;
+        color: $Very-Dark-Blue;
+    }
+    .card-body p span{
+        font: normal normal 400 12px/25px Rubik;
+        color: $Grayish-Blue;
+        padding-bottom: 15px;
+    }
+
+    .card-top{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px dotted $Grayish-Blue;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+}
+#extensions{
+    margin-bottom: 3rem;
+}
+#faq{
+    h2{
+        font: normal normal 500 30px/30px Rubik;
+        color: $Very-Dark-Blue;
+    }
+    p{
+        font: normal normal 400 18px/30px Rubik;
+        color: $Grayish-Blue;
+        margin-bottom: 2rem;
+    }
+
+    .row:nth-child(2){
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row:nth-child(2) .col-12{
+        width: 50%;
+    }
+    ul{
+        display: block;
+    }
+    
+    li{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-top: 1px  solid $Grayish-Blue;
+        border-bottom: 1px  solid $Grayish-Blue;
+        padding: 1rem;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    li.arrow  .aux{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .arrow .hidden{
+        display: none;
+    }
+    
+    .arrow.up img{
+        transform: rotateX(180deg);
+    }
+
+    .arrow .aux a{
+        font: normal normal 500 18px/25px Rubik;
+        color: $Very-Dark-Blue;
+        text-decoration: none;
+    }
+
+    button{
+        @include button();
+        background: $Soft-Blue;
+        width: 20%;
+
+    }
+
+}
+
+footer{
+    background: $Very-Dark-Blue;
+}
+
+#prefooter{
+    background: $Soft-Blue;
+    padding: 4rem;
+    margin-top: 2rem;
+    
+}
+
+#prefooter{
+    p{
+        font: normal normal 400 16px/25px Rubik;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+    h2{
+        font: normal normal 500 35px/35px Rubik;
+        color: #fff;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        width: 20%;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+        padding: .5rem
+    }
+
+    button{
+        @include button();
+        width: 15%;
+    }
+}
+
+#footer{
+    padding: 1rem;
+}
+#footer{
+    .col-6{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+    }
+
+    ul{
+        width: 100%;
+        justify-content: end;
+    }
+    ul li{
+        padding: 1rem;
+    }
+}
+.attribution { display: none;}
