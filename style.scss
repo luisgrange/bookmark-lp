@@ -369,3 +369,22 @@ footer{
     }
 }
 .attribution { display: none;}
+.hamb{
+    display: none;
+}
+
+@media (max-width: 768px){
+    header {
+        ul{
+            display: none;
+        }
+        .menu{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .hamb{
+            display: block;
+        }
+    }
+}
