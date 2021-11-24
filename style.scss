@@ -17,6 +17,9 @@ $Very-Dark-Blue: hsl(229, 31%, 21%);
 }
 
 /*GLOBAL*/
+body{
+    position: relative;;
+}
 #mobile{
     display: none;
 }
@@ -386,5 +389,66 @@ footer{
         .hamb{
             display: block;
         }
+    }
+
+    #mobile.open{
+        display: block;
+        background: $Very-Dark-Blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        max-width: 100%;
+
+    }
+
+    #mobile{
+        .container{
+            padding-top: 1rem;
+        }
+        .row .col-6:last-child{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        ul{
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        ul li{
+            padding: 1rem 0;
+            border-top: 1px solid $Grayish-Blue ;
+            border-bottom: 1px solid $Grayish-Blue;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+        }
+        ul li a{
+            text-decoration: none;
+            text-align: center;
+            font: normal normal 400 18px/30px Rubik;
+            color: #fff;
+        }
+        button{
+            @include button();
+            background: none;
+            border: 2px solid $Grayish-Blue;
+
+        }
+    }
+    #main-top{
+        .container{
+            flex-direction: column;
+        }
+        .image img{
+            width: 100%;
+        }
+    }
+    #main-top::before{
+        top: 0;
+        height: 205px;
+        width: 249px;
     }
 }

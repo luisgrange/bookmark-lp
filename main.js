@@ -43,3 +43,12 @@ $('.aux').on('click', function(){
     $(this).closest('.arrow').find('.hidden').css({'display':'block'});
   }
 });
+
+
+/*  MENU */
+$('.hamb').on('click', function(){
+  $('#mobile').addClass('open');
+});
+$('.close').on('click', function(){
+  $('#mobile').removeClass('open');
+});

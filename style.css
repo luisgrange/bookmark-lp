@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 /*GLOBAL*/
+body {
+  position: relative;
+}
+
 #mobile {
   display: none;
 }
@@ -370,5 +374,69 @@ footer {
   }
   header .hamb {
     display: block;
+  }
+
+  #mobile.open {
+    display: block;
+    background: #252b46;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    max-width: 100%;
+  }
+
+  #mobile .container {
+    padding-top: 1rem;
+  }
+  #mobile .row .col-6:last-child {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  #mobile ul {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  #mobile ul li {
+    padding: 1rem 0;
+    border-top: 1px solid #9194a1;
+    border-bottom: 1px solid #9194a1;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  #mobile ul li a {
+    text-decoration: none;
+    text-align: center;
+    font: normal normal 400 18px/30px Rubik;
+    color: #fff;
+  }
+  #mobile button {
+    border: none;
+    border-radius: 3px;
+    background: #fa5757;
+    color: #fff;
+    font: normal normal 18px/20px Rubik;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.4s ease;
+    background: none;
+    border: 2px solid #9194a1;
+  }
+
+  #main-top .container {
+    flex-direction: column;
+  }
+  #main-top .image img {
+    width: 100%;
+  }
+
+  #main-top::before {
+    top: 0;
+    height: 205px;
+    width: 249px;
   }
 }/*# sourceMappingURL=style.css.map */
