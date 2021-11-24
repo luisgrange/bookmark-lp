@@ -345,22 +345,20 @@ footer{
     padding: 1rem;
 }
 #footer{
-    .col-6{
+    .col-12{
         display: flex;
         justify-content: left;
         align-items: center;
     }
     .links{
-        width: 100%;
         display: flex;
-        justify-content: space-evenly;
     }
 
     a{
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-    
+        padding: 0 1rem;
     }
 
     ul{

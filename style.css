@@ -332,20 +332,19 @@ footer {
   padding: 1rem;
 }
 
-#footer .col-6 {
+#footer .col-12 {
   display: flex;
   justify-content: left;
   align-items: center;
 }
 #footer .links {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
 }
 #footer a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0 1rem;
 }
 #footer ul {
   width: 100%;
