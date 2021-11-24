@@ -512,4 +512,19 @@ footer{
             margin-bottom: .3rem;
         }
     }
+
+    #footer{
+        .links{
+            padding-top: 1rem;
+            flex-direction: column;
+        }
+
+        .links a{
+            padding: 1rem 0;
+        }
+
+        ul{
+            justify-content: center;
+        }
+    }
 }

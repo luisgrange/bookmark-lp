@@ -486,4 +486,15 @@ footer {
     width: 100%;
     margin-bottom: 0.3rem;
   }
+
+  #footer .links {
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+  #footer .links a {
+    padding: 1rem 0;
+  }
+  #footer ul {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
