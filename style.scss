@@ -462,8 +462,53 @@ footer{
     }
 
     #features{
-        ul{
+        ul, .tab.active{
             flex-direction: column;
+        }
+
+        .actual-content li .col-md-6:nth-child(2){
+            justify-content: center;
+            align-items: center;
+        }
+        .actual-content li p{
+            width: 100%;
+            text-align: center;
+        }
+
+        .actual-content{
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+    #extensions{
+        ul{
+            display: block;
+        }
+
+        ul li{
+            margin-bottom: 1rem;
+        }
+    }
+
+    #faq{
+        .row:nth-child(2) .col-12{
+            width: 100%;
+        }
+
+        button{
+            width: 45%;
+        }
+    }
+
+    #prefooter{
+        .contact{
+            width: 100%;
+        }
+
+        .contact input, .contact button{
+            width: 100%;
+            margin-bottom: .3rem;
         }
     }
 }

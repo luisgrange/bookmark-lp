@@ -449,7 +449,40 @@ footer {
     width: 249px;
   }
 
-  #features ul {
+  #features ul, #features .tab.active {
     flex-direction: column;
+  }
+  #features .actual-content li .col-md-6:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+  }
+  #features .actual-content li p {
+    width: 100%;
+    text-align: center;
+  }
+  #features .actual-content {
+    margin-bottom: 2rem;
+  }
+
+  #extensions ul {
+    display: block;
+  }
+  #extensions ul li {
+    margin-bottom: 1rem;
+  }
+
+  #faq .row:nth-child(2) .col-12 {
+    width: 100%;
+  }
+  #faq button {
+    width: 45%;
+  }
+
+  #prefooter .contact {
+    width: 100%;
+  }
+  #prefooter .contact input, #prefooter .contact button {
+    width: 100%;
+    margin-bottom: 0.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
