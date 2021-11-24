@@ -445,10 +445,25 @@ footer{
         .image img{
             width: 100%;
         }
+
+        h1, p{
+            text-align: center;
+        }
+
+        .btn-row .btn{width: 50%;}
+        .btn-row{
+            padding-bottom: 1rem;
+        }
     }
     #main-top::before{
         top: 0;
         height: 205px;
         width: 249px;
+    }
+
+    #features{
+        ul{
+            flex-direction: column;
+        }
     }
 }

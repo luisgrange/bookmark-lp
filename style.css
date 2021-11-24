@@ -433,10 +433,23 @@ footer {
   #main-top .image img {
     width: 100%;
   }
+  #main-top h1, #main-top p {
+    text-align: center;
+  }
+  #main-top .btn-row .btn {
+    width: 50%;
+  }
+  #main-top .btn-row {
+    padding-bottom: 1rem;
+  }
 
   #main-top::before {
     top: 0;
     height: 205px;
     width: 249px;
+  }
+
+  #features ul {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

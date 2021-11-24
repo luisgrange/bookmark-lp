@@ -1,3 +1,4 @@
+/*  FEATURES */
 $('.feature').on('mouseenter mouseleave', function(){
   var x = $('.feature');
   for(var i=0; i<x.length; i++){
@@ -28,10 +29,7 @@ $('.feature').on('mouseenter', function(){
   } 
 });
 
-
-
-
-
+/*  FAQ PART */
 $('.aux').on('click', function(){
   if($(this).parent().is('.up')){
     $(this).closest('.arrow').removeClass('up');
