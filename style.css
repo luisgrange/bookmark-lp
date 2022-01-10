@@ -355,7 +355,14 @@ footer {
 }
 
 .attribution {
-  display: none;
+  display: block;
+  position: relative;
+  float: right;
+  color: #fff;
+}
+
+.attribution p {
+  font: normal normal 400 16px/20px Rubik;
 }
 
 .hamb {

@@ -369,7 +369,16 @@ footer{
         padding: 1rem;
     }
 }
-.attribution { display: none;}
+.attribution { 
+    display: block;
+    position: relative;
+    float: right;
+    color: #fff;
+
+}
+.attribution p{
+    font: normal normal 400 16px/20px Rubik;
+}
 .hamb{
     display: none;
 }
